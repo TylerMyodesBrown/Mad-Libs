@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} New Story {% endblock %}
+
+{% block content %} 
+<h1>Fill out the following categories to get a new Mad-Lib</h1>
+
+<form action="/story">
+    <input type="text" name="place"  placeholder="Name a Place!" id=""> <br>
+    <input type="text" name="noun"  placeholder="Give a Noun" id=""> <br>
+    <input type="text" name="verb"  placeholder="State a Verb" id=""> <br>
+    <input type="text" name="adjective"  placeholder="Describe an Adjective" id=""> <br>
+    <select name="story-choice" id="cars">
+        <option value= 'story'>Simple</option>
+        <option value='Better_story'>Intermediate</option>
+        <option value='Nice_Story'>Advanced</option>
+        <option value='Great_Story'>Master</option>
+      </select>
+    <button>Submit</button>
+</form>
+{% endblock %}
+
